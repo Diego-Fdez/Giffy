@@ -1,0 +1,39 @@
+.Category-title {
+  color: var(--theme-body-txt);
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+  margin-top: 0.6rem;
+}
+
+.Category-list {
+  list-style-position: inside;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0.3rem;
+  margin: 0.2rem;
+  font-size: 1.2rem;
+}
+
+a {
+  color: inherit;
+  font-size: 1em;
+  text-decoration: none;
+  transition: all ease-in 0.1s;
+}
+
+@media (min-width: 55rem) {
+  .Category-title {
+    text-align: right;
+  }
+
+  .Category-list {
+    justify-content: flex-end;
+    width: 250px;
+  }
+}

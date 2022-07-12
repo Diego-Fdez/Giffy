@@ -1,0 +1,37 @@
+:root {
+  --gridList-column: 250px;
+  --gridList-rows: 250px;
+  --gridList-gap: 6px;
+}
+
+.ListOfGifs {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: repeat(auto-fit, minmax(var(--gridList-column), 1fr));
+  grid-auto-rows: var(--gridList-rows);
+  grid-template-rows: masonry;
+  grid-auto-flow: row dense;
+  grid-gap: var(--gridList-gap, 6px);
+  gap: var(--gridList-gap, 6px);
+  align-items: center;
+}
+
+@media screen and (min-width: 37.5rem) {
+  :root {
+    --gridList-column: 580px;
+    --gridList-rows: 200px;
+  }
+  .ListOfGifs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  :root {
+    --gridList-column: 700px;
+    --gridList-rows: 210px;
+  }
+  .ListOfGifs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

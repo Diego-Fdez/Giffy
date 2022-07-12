@@ -1,0 +1,28 @@
+{
+  "name": "giffy",
+  "private": true,
+  "version": "0.0.0",
+  "author": {
+    "name": "Diego Fedez"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "intersection-observer": "^0.12.2",
+    "just-debounce-it": "^3.0.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-helmet": "^6.1.0",
+    "wouter": "^2.8.0-alpha.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "jest": "^28.1.2",
+    "vite": "^2.9.9"
+  }
+}
